@@ -5,7 +5,7 @@ provider "aws" {
 module "vpc" {
   source               = "../../"
   aws_region           = "ap-south-1"
-  region_azs           = ["a","b","c"]
+  region_azs           = ["a", "b", "c"]
   vpc_cidr             = "10.10.0.0/16"
   num_public_subnets   = 3
   num_private_subnets  = 3

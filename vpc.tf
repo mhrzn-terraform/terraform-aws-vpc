@@ -3,10 +3,10 @@ resource "aws_vpc" "vpc" {
   enable_dns_hostnames = true
 
   tags = merge(
-      var.common_tags,
-      {
-        Name         = "${var.project_name}-vpc-${var.env}"
-      }
+    var.common_tags,
+    {
+      Name = "${var.project_name}-vpc-${var.env}"
+    }
   )
 
 }
