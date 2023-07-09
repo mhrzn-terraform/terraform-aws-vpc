@@ -1,9 +1,7 @@
-# AWS VPC Terraform module
+provider "aws" {
+  region = "us-east-1"
+}
 
-Terraform module which creates VPC resources on AWS.
-
-## Usage
-```hcl
 module "vpc" {
   source               = "../../"
   aws_region           = "ap-south-1"
@@ -14,8 +12,3 @@ module "vpc" {
   project_name         = "demo-vpc"
   multiple_nat_gateway = true
 }
-```
-
-## Authors
-
-Module is maintained by [Aman Maharjan](https://github.com/mhrznamn068)
